@@ -1,0 +1,25 @@
+<%- include("partials/header.ejs") %>
+<body style="margin-left: 30%; margin-right: 30%; margin-top: 10%;">
+    <div class="container">
+        <main class="form-signin w-100 m-auto">
+            <form action="/next2" method="post">
+                <img class="mb-4" src="SideLines!_transparent.png" alt=""  height="47">
+                <h1 class="h3 mb-3 fw-normal" style="margin: 10px;color: red;">Password is incorrect</h1>
+                
+                <div class="form-floating" style="margin: 10px;">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating" style="margin: 10px;">
+                    <input type="text" class="form-control" id="floatingPassword" placeholder="Password" name="pass">
+                    <label for="floatingPassword">Password</label>
+                </div>
+                
+                <button class="btn btn-primary w-100 py-2" type="submit" style="margin: 10px;">Sign in</button>
+                <p class="mt-5 mb-3 text-body-secondary">© <%- new Date().getFullYear() %></p>
+            </form>
+        </main>
+    </div>
+</body>
+
+<%- include("partials/footer.ejs") %>
